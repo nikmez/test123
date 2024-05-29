@@ -1,18 +1,14 @@
 # include <iostream>
-using namespace std;
+# include <string>
+
 int main(){
-    cout <<  "H";
-    cout <<  "e";
-    cout <<  "l";
-    cout <<  "l";
-    cout <<  "o";
-    cout <<  " ";
-    cout <<  "w";
-    cout <<  "o";
-    cout <<  "r";
-    cout <<  "l";
-    cout <<  "d";
-    cout << endl;
+    std::cout << "enter your name:";
+
+    std::string name;
+    std::getline (std::cin,name);
+    std::cout << "hello world from @" << name << std::endl;
+
+
     return 0;
 
 }
